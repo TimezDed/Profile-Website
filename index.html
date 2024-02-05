@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>hana</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="assets/images/apple.png">
+        <script src="main.js"></script>
+    </head>
+
+    <body>
+        <header id="main-header"> <!-- navigation bar at top -->
+            <img id="logo" src="assets/images/apple_bo12.png" alt="hana profile icon">
+            <h1>hana</h1>
+            <nav>
+                <ul>
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#social-media">SOCIAL MEDIA</a></li>
+                    <li><a href="#recommendations">RECOMMENDATIONS</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="header"></div>
+
+        <main>
+            <fieldset id="left-section">
+
+                <section id="profile">
+                    <img src="assets/images/apple_boi.jpg" alt="profile picture">
+                    <h1>Profile</h1>
+                    <p>Name: Hannah Ahn</p>
+                    <p>Age: 21</p>
+                    <p>Degree: Bachelor of Science (Computer Science)</p>
+                    <p>Hobbies: Drawing, Gaming, Singing</p>
+                </section>
+
+                <section id="social-media">
+                    <h3>Social Media</h3>
+                    <h4><a href="">LinkedIn</a></h4>
+                    <h4><a href="">GitHub</a></h4>
+                </section>
+
+            </fieldset>
+
+            <fieldset id="timeline">
+
+                <h2>Timeline</h2>
+                <hr>
+                <button id="oldtonew" onclick="changeTime()">Oldest to Newest</button>
+
+                <div class="divide-post"></div>
+
+                <section id="posts">
+
+                    <article class="blog-section">
+                        <img class="icon-post" src="assets/images/apple_boi.jpg" alt="icon"></img>
+
+                        <section class="blog-post" id="post2002">
+                            <h4>Year 2002-2011</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In corporis, exercitationem molestiae inventore accusantium asperiores quae distinctio nesciunt facere ullam, dolorem quasi? Voluptatem eius praesentium facilis sunt, quaerat exercitationem porro.</p>
+                        </section>
+                    </article>
+
+                    <div class="divide-post"></div>
+
+                    <article class="blog-section">
+                        <img class="icon-post" src="assets/images/apple_boi.jpg" alt="icon"></img>
+
+                        <section class="blog-post" id="post2012">
+                            <h4>Year 2012-2020</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur est in, cupiditate molestias exercitationem ut reprehenderit laudantium illum dolor suscipit beatae facere corporis sapiente facilis quae ab totam, nam impedit!</p>
+                        </section>
+                    </article>
+
+                    <div class="divide-post"></div>
+
+                    <article class="blog-section">
+                        <img class="icon-post" src="assets/images/apple_boi.jpg" alt="icon"></img>
+
+                        <section class="blog-post" id="post2020">
+                            <h4>Year 2021-2023</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem inventore consequuntur officia assumenda iure aut officiis nemo atque voluptates autem magnam, iusto, modi id? Quibusdam quam minus dignissimos et accusamus!</p>
+                        </section>
+                    </article>
+
+                    <div class="divide-post"></div>
+
+                    <article class="blog-section">
+                        <img class="icon-post" src="assets/images/apple_boi.jpg" alt="icon"></img>
+
+                        <section class="blog-post" id="post2024">
+                            <h4>Year 2024-Present</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur voluptatibus facilis ipsam nam? Aut quis impedit quae quam officia explicabo, dolor odit nihil nemo eos id inventore sapiente error dignissimos?</p>
+                        </section>
+                    </article>
+
+                </section>
+
+                <div class="divide-post"></div>
+
+            </fieldset>
+        </main>
+
+        <section id="recommendations">
+            <h4>Recommendations</h4>
+            <p>If you want recommendations on:</p>
+
+            <section id="options">
+
+                <a href="#recommendations" onclick="changeText(0)">ANIME</a> &nbsp;
+                <a href="#recommendations" onclick="changeText(1)">MANGA</a>&nbsp;
+                <a href="#recommendations" onclick="changeText(2)">GAME</a>&nbsp;
+                <a href="#recommendations" onclick="changeText(3)">SONG</a>&nbsp;
+
+            </section>
+
+            <section id="chgsection">
+                <img src="assets/images/imgslot.png" alt="changimg" id="chgimg">
+                <div>
+                    <div id="chgtitle"></div>
+                    <div id="chgtext">This is just a placeholder text. Click on the buttons above for recommendations!</div>
+                </div>
+            </section>
+        </section>
+
+        <footer id="main-footer">
+            <object data="" type="">Copyright &copy; 2024, Hana</object>
+        </footer>
+    </body>
+</html>
