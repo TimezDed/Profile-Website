@@ -1,9 +1,9 @@
 const rectitle = ["Magi", "Blue Period", "OMORI (trigger warning)", "Serenade"];
 
-const recdesc = ["It's a story inspired by the One Thousand and One Nights, following two protagonists Alibaba and Aladdin.",
+const recdesc = ["It's a story inspired by One Thousand and One Nights, a collection of Middle Eastern folktales, following two protagonists Alibaba and Aladdin.",
 "A story about an artist's journey; how one's experience can change their perspective and ambitions.",
 "You've been here as long as you can remember. Stuck in a white space with nothing but you and your belongings and your cat. There's nothing much to do here... Do you want to go outside?",
-"A song by a KPOP group called BOYNEXTDOOR; OO-E-OO-E-OO-E-OO my first serenade~ Oh why! I don't know, swear you'll like it!"];
+"A song by the KPOP group \"BOYNEXTDOOR\"; OO-E-OO-E-OO-E-OO my first serenade~ Oh why! I don't know, swear you'll like it!"];
 
 const recimg = ["assets/images/magi2.png", "assets/images/blue_period.png", "assets/images/omori.png", "assets/images/serenade.png"];
 

@@ -91,8 +91,11 @@ main {
     padding: 10px;
 }
 
-#profile h1 {
-    color: black;
+#profile {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
 }
 
 #profile img {
@@ -100,7 +103,14 @@ main {
     max-height: 100px;
 }
 
+/* #profile-description {
+    border: 3px solid #b2c0cf;
+    margin: 0;
+    padding: 10px;
+} */
+
 #social-media {
+    padding: 60px 0 0 0;
     color: black;
 }
 
@@ -112,12 +122,32 @@ main {
     background-color: rgb(182, 84, 100);
 }
 
+#timeline h2 {
+    padding-left: 14px;
+}
+
+#oldtonew {
+    background-color: #1b2632;
+    border: none;
+    font-size: 14px;
+    color: #b2c0cf;
+    border-radius: 6px;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.moveRight {
+    display: flex;
+    justify-content: flex-end;
+}
+
 /* <div> elements separating each post */
 .divide-post {
     border: 10px solid rgb(182, 84, 100);
 }
 
-.blog-post {
+.post-blog {
     max-width: 440px;
     text-align: left;
     font-size: 1em;
@@ -133,7 +163,7 @@ main {
     justify-content: left;
 }
 
-.icon-post {
+.post-icon {
     width: 36px;
     height: 36px;
     margin: 0;
@@ -149,8 +179,8 @@ main {
 #recommendations {
     max-width: 740px;
     border: none;
-    margin: auto;
-    padding: 10px;
+    margin: 0 auto 100px;
+    padding: 60px 10px 10px 10px;
     text-align: center;
     background-color: #b2c0cf;
 }
@@ -163,6 +193,18 @@ main {
     justify-content: space-evenly;
 }
 
+#options a {
+    text-decoration: none;
+    background-color: rgb(255, 127, 249);
+    padding: 0.2rem;
+    color: #2b6a72;
+}
+
+#options a:hover {
+    background-color: #2b6a72;
+    color: #b2c0cf;
+}
+
 #chgsection {
     display: flex;
     justify-content: center;
@@ -170,8 +212,8 @@ main {
 }
 
 #chgimg {
-    width: 200px;
-    height: 260px;
+    width: 220px;
+    height: 286px;
     /* 309 394 */
     object-fit: cover;
 }
@@ -184,4 +226,14 @@ main {
 footer {
     background-color: #1b2632;
     color: rgb(233, 63, 67);
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+hr {
+    border: 2px solid #b2c0cf;
+    max-width: 740px;
 }

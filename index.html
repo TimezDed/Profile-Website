@@ -29,11 +29,13 @@
 
                 <section id="profile">
                     <img src="assets/images/apple_boi.jpg" alt="profile picture">
-                    <h1>Profile</h1>
-                    <p>Name: Hannah Ahn</p>
-                    <p>Age: 21</p>
-                    <p>Degree: Bachelor of Science (Computer Science)</p>
-                    <p>Hobbies: Drawing, Gaming, Singing</p>
+                    <h1>About me</h1>
+                    <div id="profile-description">
+                        <p><span class="bold">Name:</span> Hannah Ahn</p>
+                        <p><span class="bold">Age:</span> 21</p>
+                        <p><span class="bold">Degree:</span> Bachelor of Science (Computer Science)</p>
+                        <p><span class="bold">Hobbies:</span> Drawing, Gaming, Singing</p>
+                    </div>
                 </section>
 
                 <section id="social-media">
@@ -48,16 +50,19 @@
 
                 <h2>Timeline</h2>
                 <hr>
-                <button id="oldtonew" onclick="changeTime()">Oldest to Newest</button>
+                
+                <div class="moveRight">
+                    <button id="oldtonew" onclick="changeTime()">Oldest to Newest</button>
+                </div>
 
                 <div class="divide-post"></div>
 
                 <section id="posts">
 
                     <article class="blog-section">
-                        <img class="icon-post" src="assets/images/apple_boi.jpg" alt="icon"></img>
+                        <img class="post-icon" src="assets/images/apple_boi.jpg" alt="icon"></img>
 
-                        <section class="blog-post" id="post2002">
+                        <section class="post-blog" id="post2002">
                             <h4>Year 2002-2011</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In corporis, exercitationem molestiae inventore accusantium asperiores quae distinctio nesciunt facere ullam, dolorem quasi? Voluptatem eius praesentium facilis sunt, quaerat exercitationem porro.</p>
                         </section>
@@ -66,9 +71,9 @@
                     <div class="divide-post"></div>
 
                     <article class="blog-section">
-                        <img class="icon-post" src="assets/images/apple_boi.jpg" alt="icon"></img>
+                        <img class="post-icon" src="assets/images/apple_boi.jpg" alt="icon"></img>
 
-                        <section class="blog-post" id="post2012">
+                        <section class="post-blog" id="post2012">
                             <h4>Year 2012-2020</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur est in, cupiditate molestias exercitationem ut reprehenderit laudantium illum dolor suscipit beatae facere corporis sapiente facilis quae ab totam, nam impedit!</p>
                         </section>
@@ -77,9 +82,9 @@
                     <div class="divide-post"></div>
 
                     <article class="blog-section">
-                        <img class="icon-post" src="assets/images/apple_boi.jpg" alt="icon"></img>
+                        <img class="post-icon" src="assets/images/apple_boi.jpg" alt="icon"></img>
 
-                        <section class="blog-post" id="post2020">
+                        <section class="post-blog" id="post2020">
                             <h4>Year 2021-2023</h4>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem inventore consequuntur officia assumenda iure aut officiis nemo atque voluptates autem magnam, iusto, modi id? Quibusdam quam minus dignissimos et accusamus!</p>
                         </section>
@@ -88,9 +93,9 @@
                     <div class="divide-post"></div>
 
                     <article class="blog-section">
-                        <img class="icon-post" src="assets/images/apple_boi.jpg" alt="icon"></img>
+                        <img class="post-icon" src="assets/images/apple_boi.jpg" alt="icon"></img>
 
-                        <section class="blog-post" id="post2024">
+                        <section class="post-blog" id="post2024">
                             <h4>Year 2024-Present</h4>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur voluptatibus facilis ipsam nam? Aut quis impedit quae quam officia explicabo, dolor odit nihil nemo eos id inventore sapiente error dignissimos?</p>
                         </section>
@@ -102,6 +107,8 @@
 
             </fieldset>
         </main>
+
+        <hr>
 
         <section id="recommendations">
             <h4>Recommendations</h4>
@@ -119,14 +126,16 @@
             <section id="chgsection">
                 <img src="assets/images/imgslot.png" alt="changimg" id="chgimg">
                 <div>
-                    <div id="chgtitle"></div>
+                    <div id="chgtitle" class="bold">Title</div>
                     <div id="chgtext">This is just a placeholder text. Click on the buttons above for recommendations!</div>
                 </div>
             </section>
         </section>
 
         <footer id="main-footer">
-            <object data="" type="">Copyright &copy; 2024, Hana</object>
+            <!-- <object data="" type="">Copyright &copy; 2024, Hana</object> -->
+            <!-- <p>Hi, nothing to see here!</p> -->
+            <object data="" type="">Hi, nothing to see here!</object>
         </footer>
     </body>
 </html>
