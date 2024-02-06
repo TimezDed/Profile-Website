@@ -5,7 +5,7 @@
 }
 
 * {
-    font-family: sans-serif;
+    font-family: "Single Day", sans-serif;
 }
 
 /* Fixed header CSS */
@@ -30,7 +30,7 @@
 }
 
 #main-header h1 {
-    margin-top: 21px;
+    margin-top: 19px;
     color: rgb(233, 63, 67);
     font-size: min(5vw, 1.2em);
 }
@@ -39,13 +39,14 @@
 nav {
     width: 70%;
     max-width: 500px;
-    margin-top: 5px;
+    margin-top: -1px;
 }
 
 nav > ul {
     display: flex;
     justify-content: space-between;
-    max-width: 270px; /* edit when you add more to nav */
+    max-width: 360px; /* edit when you add more to nav */
+    font-size: 18px;
 }
 
 nav > ul > li {
@@ -127,6 +128,10 @@ main {
     color: #b2c0cf;
 }
 
+#profile-description p {
+    font-size: 18px;
+}
+
 #timeline {
     border: none;
     max-width: 500px;
@@ -140,6 +145,7 @@ main {
     color: #1b2632;
     background-color: rgb(228, 85, 88);
     border-radius: 3px;
+    font-size: 35px;
 }
 
 #oldtonew {
@@ -155,14 +161,14 @@ main {
 
 #oldtonew:hover {
     cursor: pointer;
-    background-color: #417d85;
+    background-color: #508c94;
     color: #b2c0cf;
 }
 
 .moveRight {
     display: flex;
     justify-content: flex-end;
-    background-color: rgb(37, 136, 136);
+    background-color: rgb(79, 129, 129);
     border-radius: 3px 3px 0 0;
     padding: 10px 10px 10px;
 }
@@ -182,6 +188,20 @@ main {
     background-color: #1b2632;
     color: #b2c0cf;
     border-radius: 0 13px 13px 13px;
+}
+
+.post-blog h4 {
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 1;
+}
+
+.post-blog p {
+    font-family: "Nunito", sans-serif;
+    font-size: 15px;
+}
+
+#post-line {
+    border: solid 1px #b2c0cf;
 }
 
 .blog-section {
@@ -217,6 +237,11 @@ main {
     color: #b2c0cf;
 }
 
+#recommendations h4 {
+    font-size: 20px;
+    font-weight: 2;
+}
+
 #options {
     max-width: 720px;
     padding: 0 10px 10px 10px;
@@ -229,11 +254,12 @@ main {
 #options a:not(#magi) {
     text-decoration: none;
     background-color: rgb(233, 63, 67);
-    padding: 0.4rem;
+    padding: 0.5rem;
     color: #152536;
     margin-bottom: 10px;
     border-radius: 5px;
     font-weight: bold;
+    font-size: 20px;
 }
 
 /* #options a:hover {
@@ -244,11 +270,18 @@ main {
 #magi {
     text-decoration: none;
     background-color: #2b6a72;
-    padding: 0.4rem;
+    padding: 0.5rem;
     color: #152536;
     margin-bottom: 10px;
     border-radius: 5px;
     font-weight: bold;
+    font-size: 20px;
+}
+
+#chgtitle {
+    margin-bottom: 18px;
+    font-size: 21px;
+    font-weight: 2;
 }
 
 #chgsection {
@@ -256,6 +289,8 @@ main {
     justify-content: center;
     margin: 10px;
     align-items: center;
+    font-size: 16px;
+    font-weight: 1;
 }
 
 #chgimg {
@@ -266,20 +301,17 @@ main {
     border-radius: 25px;
 }
 
-#chgtitle {
-    margin-bottom: 18px;
-}
-
 #chgtext {
     margin: 10px 30px 60px;
     max-width: 420px;
 }
 
-/* footer {
+footer {
     background-color: #1b2632;
     color: rgb(233, 63, 67);
     text-align: center;
-} */
+    padding: 10px;
+}
 
 #social-media {
     background-color: #1b2632;
@@ -308,4 +340,9 @@ hr {
 .button:active {
     background-color: #3e8e41;
     transform: translateY(4px);
+}
+
+.nunito {
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
 }
