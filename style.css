@@ -209,8 +209,8 @@ main {
 #recommendations {
     max-width: 740px;
     border: none;
-    margin: 0 auto 100px;
-    padding: 10px 14px 20px 14px;
+    margin: 0 auto 20px;
+    padding: 10px 14px 20px;
     text-align: center;
     background-color: #152536;
     border-radius: 25px;
@@ -222,7 +222,8 @@ main {
     padding: 0 10px 10px 10px;
     margin: auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-content: center;
 }
 
 #options a:not(#magi) {
@@ -302,4 +303,9 @@ main {
 hr {
     border: 1px solid #1b2632;
     max-width: 740px;
+}
+
+.button:active {
+    background-color: #3e8e41;
+    transform: translateY(4px);
 }
