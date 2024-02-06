@@ -117,14 +117,14 @@ main {
 }
 
 #profile img {
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 95px;
+    max-height: 95px;
     border: 2px solid #2b6a72;
     border-radius: 10px;
 }
 
 #profile-description {
-    padding: 10px 15px;
+    padding: 10px 20px;
     color: #b2c0cf;
 }
 
@@ -140,7 +140,7 @@ main {
 }
 
 #timeline h2 {
-    padding: 20px 10px 15px 14px;
+    padding: 20px 10px 15px 16px;
     margin: 0 0 5px 0;
     color: #1b2632;
     background-color: rgb(228, 85, 88);
@@ -182,7 +182,7 @@ main {
     max-width: 440px;
     text-align: left;
     font-size: 1em;
-    padding: 5px 10px;
+    padding: 5px 15px;
     margin-left: 14px;
     margin-right: 10px;
     background-color: #1b2632;
@@ -251,7 +251,7 @@ main {
     align-content: center;
 }
 
-#options a:not(#magi) {
+#blueperiod, #omori, #serenade {
     text-decoration: none;
     background-color: rgb(233, 63, 67);
     padding: 0.5rem;
@@ -262,10 +262,9 @@ main {
     font-size: 20px;
 }
 
-/* #options a:hover {
-    background-color: #2b6a72;
+#options a:hover {
     color: #b2c0cf;
-} */
+}
 
 #magi {
     text-decoration: none;
