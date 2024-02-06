@@ -10,8 +10,9 @@
 
 /* Fixed header CSS */
 #main-header {
-    min-width: 900px;
-    border-radius: 0px 0px 20px 20px;
+    /* min-width: 900px; */
+    width: 100%;
+    /* border-radius: 0px 0px 20px 20px; */
     height: 60px;
     background-color: #1b2632;
     display: flex;
@@ -44,7 +45,7 @@ nav {
 nav > ul {
     display: flex;
     justify-content: space-between;
-    max-width: 450px;
+    max-width: 270px; /* edit when you add more to nav */
 }
 
 nav > ul > li {
@@ -63,12 +64,21 @@ nav > ul > li:hover {
 li > a {
     color: inherit;
     text-decoration: none;
+    font-weight: bold;
 }
 
 /* Ensures main content is not covered by fixed header */
-#header {
+#top {
     width: 100%;
-    height: 60px;
+    height: 72px;
+}
+
+#middle {
+    max-width: 740px;
+    height: 55px;
+    background-color: rgb(228, 85, 88);
+    margin: 0 auto 10px;
+    border-radius: 25px;
 }
 
 /* The main content of the page */
@@ -87,7 +97,6 @@ main {
 /* has #profile and #social-media */
 #left-section {
     font-size: 0.9em;
-    background-color: rgb(224, 134, 149);
     width: 220px;
     display: flex;
     flex-direction: column;
@@ -101,20 +110,21 @@ main {
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
+    background-color: #1b2632;
+    border-radius: 10px;
+    padding: 25px 0 0 0;
 }
 
 #profile img {
     max-width: 100px;
     max-height: 100px;
+    border: 2px solid #2b6a72;
+    border-radius: 10px;
 }
 
 #profile-description {
-    padding: 10px;
-}
-
-#social-media {
-    padding: 60px 0 0 0;
-    color: black;
+    padding: 10px 15px;
+    color: #b2c0cf;
 }
 
 #timeline {
@@ -122,11 +132,14 @@ main {
     max-width: 500px;
     margin: 0;
     padding: 10px;
-    background-color: rgb(182, 84, 100);
 }
 
 #timeline h2 {
-    padding-left: 14px;
+    padding: 20px 10px 15px 14px;
+    margin: 0 0 5px 0;
+    color: #1b2632;
+    background-color: rgb(228, 85, 88);
+    border-radius: 3px;
 }
 
 #oldtonew {
@@ -142,18 +155,21 @@ main {
 
 #oldtonew:hover {
     cursor: pointer;
-    background-color: #2b6a72;
+    background-color: #417d85;
     color: #b2c0cf;
 }
 
 .moveRight {
     display: flex;
     justify-content: flex-end;
+    background-color: rgb(37, 136, 136);
+    border-radius: 3px 3px 0 0;
+    padding: 10px 10px 10px;
 }
 
 /* <div> elements separating each post */
 .divide-post {
-    border: 10px solid rgb(182, 84, 100);
+    padding: 10px;
 }
 
 .post-blog {
@@ -162,6 +178,7 @@ main {
     font-size: 1em;
     padding: 5px 10px;
     margin-left: 14px;
+    margin-right: 10px;
     background-color: #1b2632;
     color: #b2c0cf;
     border-radius: 0 13px 13px 13px;
@@ -175,49 +192,69 @@ main {
 .post-icon {
     width: 36px;
     height: 36px;
-    margin: 0;
+    margin-left: 4px;
     padding: 0;
     border: 2px #1b2632 solid;
+    border-radius: 3px;
 }
 
 #posts {
     display: flex;
     flex-direction: column;
+    background-color: rgb(117, 161, 161);
+    padding: 10px;
+    border-radius: 0 0 3px 3px;
 }
 
 #recommendations {
     max-width: 740px;
     border: none;
     margin: 0 auto 100px;
-    padding: 60px 10px 10px 10px;
+    padding: 10px 14px 20px 14px;
     text-align: center;
-    background-color: #b2c0cf;
+    background-color: #152536;
+    border-radius: 25px;
+    color: #b2c0cf;
 }
 
 #options {
     max-width: 720px;
-    padding: 10px;
+    padding: 0 10px 10px 10px;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
 }
 
-#options a {
+#options a:not(#magi) {
     text-decoration: none;
-    background-color: rgb(255, 127, 249);
-    padding: 0.2rem;
-    color: #2b6a72;
+    background-color: rgb(233, 63, 67);
+    padding: 0.4rem;
+    color: #152536;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
-#options a:hover {
+/* #options a:hover {
     background-color: #2b6a72;
     color: #b2c0cf;
+} */
+
+#magi {
+    text-decoration: none;
+    background-color: #2b6a72;
+    padding: 0.4rem;
+    color: #152536;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
 #chgsection {
     display: flex;
     justify-content: center;
     margin: 10px;
+    align-items: center;
 }
 
 #chgimg {
@@ -225,17 +262,37 @@ main {
     height: 286px;
     /* 309 394 */
     object-fit: cover;
+    border-radius: 25px;
+}
+
+#chgtitle {
+    margin-bottom: 18px;
 }
 
 #chgtext {
-    margin: 10px 10px 10px 20px;
+    margin: 10px 30px 60px;
     max-width: 420px;
 }
 
-footer {
+/* footer {
     background-color: #1b2632;
     color: rgb(233, 63, 67);
     text-align: center;
+} */
+
+#social-media {
+    background-color: #1b2632;
+    border-radius: 10px;
+    color: #b2c0cf;
+}
+
+#social-media a {
+    text-decoration: none;
+    color: #b2c0cf;
+}
+
+#social-media a:hover {
+    color: #2b6a72;
 }
 
 .bold {
@@ -243,6 +300,6 @@ footer {
 }
 
 hr {
-    border: 2px solid #b2c0cf;
+    border: 1px solid #1b2632;
     max-width: 740px;
 }

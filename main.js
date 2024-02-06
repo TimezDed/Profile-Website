@@ -7,12 +7,22 @@ const recdesc = ["It's a story inspired by One Thousand and One Nights, a collec
 
 const recimg = ["assets/images/magi2.png", "assets/images/blue_period.png", "assets/images/omori.png", "assets/images/serenade.png"];
 
+const id = ["magi", "blueperiod", "omori", "serenade"];
+
+let keepTrack = "magi";
+
 function changeText(num) {
   document.getElementById("chgtitle").innerHTML = rectitle[num];
   document.getElementById("chgtext").innerHTML = recdesc[num];
-  
+
   const img = document.getElementById("chgimg");
   img.src = recimg[num];
+
+  if(id[num] != keepTrack) {
+    document.getElementById(keepTrack).style.background = "rgb(233, 63, 67)";
+    keepTrack = id[num];
+    document.getElementById(keepTrack).style.background = "#2b6a72";
+  }  
 }
 
 var isOld = true;
