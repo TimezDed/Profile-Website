@@ -59,7 +59,7 @@ nav > ul > li:hover {
     background-color: rgb(233, 63, 67);
     color: #1b2632;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 1px;
 }
 
 li > a {
