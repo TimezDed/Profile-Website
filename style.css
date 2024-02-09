@@ -59,6 +59,7 @@ nav > ul > li:hover {
     background-color: rgb(233, 63, 67);
     color: #1b2632;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 li > a {
@@ -196,7 +197,7 @@ main {
 }
 
 .post-blog p {
-    font-family: "Nunito", sans-serif;
+    font-family: Nunito, sans-serif;
     font-size: 15px;
 }
 
@@ -329,6 +330,8 @@ footer {
 
 .bold {
     font-weight: bold;
+    font-family: Barlow, sans-serif;
+    font-size: 15px;
 }
 
 hr {
@@ -342,6 +345,6 @@ hr {
 }
 
 .nunito {
-    font-family: "Nunito", sans-serif;
+    font-family: Nunito, sans-serif;
     font-size: 14px;
 }
