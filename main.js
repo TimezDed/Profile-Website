@@ -51,3 +51,24 @@ function changeTime() {
 // always use const unless you know you are going to reassign it
 
 // String, Numbers, Boolean, null, undefined, Symbol
+
+let num = 1;
+
+while(num <= 100) {
+  if(num % 3 == 0 && num % 5 == 0) {
+    console.log("FizzBuzz");
+  }else if(num % 3 == 0) {
+    console.log("Fizz");
+  }else if(num % 5 == 0) {
+    console.log("Buzz");
+  }else {
+    console.log(num);
+  }
+
+  num++;
+}
+
+// Exercise: print to the browser console the numbers 1-100, but if a number is 
+// divisible by 3 print "Fizz",
+// divisible by 5 print "Buzz"
+// divisible by both 3 and 5, print "FizzBuzz"
